@@ -22,11 +22,11 @@ function greet(time) {
     return "Good Afternoon"
   } else if (integer > 17) {
     return "Good Evening"
-  } else if (time) {return `'${time}'`}
+  } else if (time) {return `${time}`}
 }
 /* Write your implementation of displayMessage() */
 
 function displayMessage(string) {
   const addToGreeting = document.getElementById('greeting')
-  addToGreeting.innerHTML = string
+  addToGreeting.innerText = string
 }
